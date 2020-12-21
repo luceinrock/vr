@@ -1,0 +1,8 @@
+:::mermaid
+    graph TD
+    A[Operator Login] --> B(Login Screen)
+    B --> C{Authenticated}
+    C -->|Yes| D[Show Profile Page]
+    C -->|No| B
+    C -->|Reset Password| F[show password reset screen]
+:::
