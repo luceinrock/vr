@@ -1,7 +1,8 @@
 <template>
   <div class="bg-white h-full w-full px-2 mt-6">
-    <div>
-      <label for="name" class="text-asphalt-700">Name</label>
+    <h1 class="text-rent-500 font-semibold text-xl">Add Car</h1>
+    <div class="mt-5">
+      <label for="name" class="text-asphalt-700">Name:</label>
       <input
         type="text"
         v-model="name"
@@ -9,7 +10,7 @@
       />
     </div>
     <div class="mt-5">
-      <label for="phone_number">Phone Number</label>
+      <label for="phone_number">Phone Number:</label>
       <input
         type="text"
         v-model="phone_number"
@@ -17,7 +18,7 @@
       />
     </div>
     <div class="mt-5">
-      <label for="email_address">Email Address</label>
+      <label for="email_address">Email Address:</label>
       <input
         type="text"
         v-model="email_address"
@@ -25,7 +26,7 @@
       />
     </div>
     <div class="mt-5">
-      <label for="address">Address</label>
+      <label for="address">Address:</label>
       <input
         type="text"
         v-model="address"
