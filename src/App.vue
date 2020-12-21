@@ -1,5 +1,6 @@
 <template>
-  <div id="app" class="h-full w-full bg-white p-6 flex justify-center">
+  <div id="app" class="h-full w-full bg-white p-6">
+    <HelloWorld />
     <Owners />
   </div>
 </template>
@@ -7,10 +8,12 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import Owners from "./components/Owners.vue";
+import HelloWorld from "./components/HelloWorld.vue";
 
 @Component({
   components: {
     Owners,
+    HelloWorld,
   },
 })
 export default class App extends Vue {}
