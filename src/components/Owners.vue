@@ -134,6 +134,7 @@ export default {
       address: "",
     };
   },
+
   methods: {
     sendData() {
       axios
