@@ -16,5 +16,7 @@
             "command": "extension.execute",
             "priority": 4
         }
-    ]
+    ],
+    "vetur.experimental.templateInterpolationService": false,
+    "vetur.validation.interpolation":true
 }

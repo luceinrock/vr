@@ -52,12 +52,13 @@
 </template>
 
 <script lang="ts">
+
 import axios from 'axios';
 
 export default {
   data() {
     return {
-      hellos: {} as string,
+       hellos: [] as any,
     };
   },
   mounted() {
