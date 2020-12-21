@@ -1,29 +1,25 @@
 <template>
     <div>
         <label for="username">Phone Number:</label>
-        <input type="text" v-model="phonenumber">
+        <input type="text" v-model="phone_number">
     </div>
 </template>
 <script>
 import axios from "axios";
 export default {
-  name: "Owners",
+  name: "Login",
   data() {
     return {
-      name: "",
       phone_number: "",
-      email_address: "",
-      address: "",
+      password: ""
     };
   },
   methods: {
     sendData() {
       axios
         .post("http://rent.cebu-airtraffic.com/fw/api/o/add", {
-          name: this.name,
           phone_number: this.phone_number,
-          email_address: this.email_address,
-          address: this.address,
+          password: this.password,
         })
         .then((response) => {
           console.log(response);
