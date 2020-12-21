@@ -1,5 +1,5 @@
 <template>
-  <div class="owners w-full h-screen bg-red-100">
+  <div class="bg-white h-full w-full px-2 mt-6">
     <div>
       <label for="name" class="text-asphalt-700">Name</label>
       <input
@@ -8,19 +8,38 @@
         class="bg-gray-50 w-full rounded-xl px-10 py-2 text-xl mt-5 focus:shadow-md focus:text-rent-500"
       />
     </div>
-    <div>
+    <div class="mt-5">
       <label for="phone_number">Phone Number</label>
-      <input type="text" v-model="phone_number" />
+      <input
+        type="text"
+        v-model="phone_number"
+        class="bg-gray-50 w-full rounded-xl px-10 py-2 text-xl mt-5 focus:shadow-md focus:text-rent-500"
+      />
     </div>
-    <div>
+    <div class="mt-5">
       <label for="email_address">Email Address</label>
-      <input type="text" v-model="email_address" />
+      <input
+        type="text"
+        v-model="email_address"
+        class="bg-gray-50 w-full rounded-xl px-10 py-2 text-xl mt-5 focus:shadow-md focus:text-rent-500"
+      />
     </div>
-    <div>
+    <div class="mt-5">
       <label for="address">Address</label>
-      <input type="text" v-model="address" />
+      <input
+        type="text"
+        v-model="address"
+        class="bg-gray-50 w-full rounded-xl px-10 py-2 text-xl mt-5 focus:shadow-md focus:text-rent-500"
+      />
     </div>
-    <button @click="sendData()">Submit</button>
+    <div class="mt-5">
+      <button
+        @click="sendData()"
+        class="bg-rent-500 text-white w-full rounded-xl px-10 py-2 text-xl mt-5 active:bg-asphalt-700 "
+      >
+        Submit
+      </button>
+    </div>
   </div>
 </template>
 
@@ -46,29 +65,9 @@ export default {
           address: this.address,
         })
         .then((response) => {
-          console.log(
-            this.name + this.phone_number + this.email_address + this.address
-          );
+          console.log(response);
         });
     },
   },
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-</style>

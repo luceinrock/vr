@@ -1,12 +1,12 @@
 <template>
-  <div id="app">
-    <Owners/>
+  <div id="app" class="h-full w-full bg-white p-6 flex justify-center">
+    <Owners />
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-import Owners from './components/Owners.vue';
+import { Component, Vue } from "vue-property-decorator";
+import Owners from "./components/Owners.vue";
 
 @Component({
   components: {
@@ -18,11 +18,10 @@ export default class App extends Vue {}
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: Poppins, sans-serif;
+}
+
+#nav a.router-link-exact-active {
+  color: #ff5f35;
 }
 </style>
