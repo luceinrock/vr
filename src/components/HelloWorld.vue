@@ -29,16 +29,22 @@
       </button>
       <div class="flex flex-col">
         <h1 class="text-xl text-rent-500">
-          <p class="tracking-wide text-asphalt-400 font-semibold ">
+          <p class="tracking-wide text-asphalt-400 font-medium   ">
             Car Owner:
           </p>
           {{ hello.owner }}
         </h1>
         <h1 class="text-xl text-rent-500 mt-2">
-          <p class="tracking-wide font-semibold text-asphalt-400">
+          <p class="tracking-wide font-medium text-asphalt-400">
             Plate Number:
           </p>
           {{ hello.plate_number }}
+        </h1>
+        <h1 class="text-xl text-rent-500 mt-2">
+          <p class="tracking-wide font-medium text-asphalt-400">
+            Car Brand:
+          </p>
+          {{ hello.brand }}
         </h1>
       </div>
     </div>
