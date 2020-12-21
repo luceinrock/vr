@@ -6,9 +6,9 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
-import Owners from "./components/Owners.vue";
-import HelloWorld from "./components/HelloWorld.vue";
+import { Component, Vue } from 'vue-property-decorator';
+import Owners from './components/Owners.vue';
+import HelloWorld from './components/HelloWorld.vue';
 
 @Component({
   components: {

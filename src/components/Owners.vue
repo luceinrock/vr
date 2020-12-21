@@ -123,29 +123,29 @@
 </template>
 
 <script>
-import axios from "axios";
+import axios from 'axios';
 export default {
-  name: "Owners",
+  name: 'Owners',
   data() {
     return {
-      name: "",
-      phone_number: "",
-      email_address: "",
-      address: "",
+      name: '',
+      phone_number: '',
+      email_address: '',
+      address: '',
     };
   },
 
   methods: {
     sendData() {
       axios
-        .post("http://rent.cebu-airtraffic.com/fw/api/o/add", {
+        .post('http://rent.cebu-airtraffic.com/fw/api/o/add', {
           name: this.name,
           phone_number: this.phone_number,
           email_address: this.email_address,
           address: this.address,
         })
         .then((response) => {
-          console.log(response);
+          // console.log(response);
         });
     },
   },

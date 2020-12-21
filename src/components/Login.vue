@@ -5,24 +5,24 @@
     </div>
 </template>
 <script>
-import axios from "axios";
+import axios from 'axios';
 export default {
-  name: "Login",
+  name: 'Login',
   data() {
     return {
-      phone_number: "",
-      password: ""
+      phone_number: '',
+      password: '',
     };
   },
   methods: {
     sendData() {
       axios
-        .post("http://rent.cebu-airtraffic.com/fw/api/o/add", {
+        .post('http://rent.cebu-airtraffic.com/fw/api/o/add', {
           phone_number: this.phone_number,
           password: this.password,
         })
         .then((response) => {
-          console.log(response);
+          // console.log(response);
         });
     },
   },

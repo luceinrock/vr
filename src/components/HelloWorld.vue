@@ -52,17 +52,17 @@
 </template>
 
 <script lang="ts">
-import axios from "axios";
+import axios from 'axios';
 
 export default {
   data() {
     return {
-      hellos: "",
+      hellos: {} as string,
     };
   },
   mounted() {
     axios
-      .get("http://rent.cebu-airtraffic.com/fw/api/o/vget")
+      .get('http://rent.cebu-airtraffic.com/fw/api/o/vget')
       .then((response) => (this.hellos = response.data));
   },
 };
