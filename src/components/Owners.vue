@@ -2,7 +2,7 @@
   <div class="bg-white h-full w-full px-2 mt-6">
     <div class="flex items-center justify-center ">
       <h1 class="text-rent-500 font-semibold text-2xl">
-        Add Car
+        Add Operator
       </h1>
     </div>
     <div class="name mt-5">
